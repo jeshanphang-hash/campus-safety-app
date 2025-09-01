@@ -6,6 +6,8 @@ import {
     StyleSheet, 
     Image,
     TextInput,
+    TouchableOpacity,
+    Alert,
  } from 'react-native';
 
 export default function Example(){
@@ -14,6 +16,7 @@ export default function Example(){
     password: '',
     email: ''
   });
+
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#81a0dfff'}}>
           <View style={styles.container}>
@@ -38,10 +41,10 @@ export default function Example(){
               autoCorrect={false}
               keyboardType="email-address"  
               style={styles.inputControl}
-                placeholder="john@example.com"
-                placeholderTextColor="#000000ff"
-                value={form.email}
-                onChangeText={email => setForm({ ...form, email})}
+              placeholder="john@example.com"
+              placeholderTextColor="#000000ff"
+              value={form.email}
+              onChangeText={email => setForm({ ...form, email})}
               />
             </View>
 
@@ -78,6 +81,7 @@ export default function Example(){
               <Text style={styles.formFooter}>
                 No account?{' '} 
                 <Text style={{ textDecorationline: 'underline'}}>Sign up</Text>
+              </Text>
             <TouchableOpacity>
           </View>
         </View>       
@@ -161,5 +165,6 @@ const styles = StyleSheet.create({
         color: '#fff',
     },
 });
+
 
 
