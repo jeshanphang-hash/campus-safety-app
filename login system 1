@@ -19,7 +19,7 @@ export default function Example(){
           <View style={styles.container}>
             <View style={styles.header}>
               <Image
-                source={{ uri: 'https;//withfra.me/me/android-chrome-512x512.png' }}
+                source={{ uri: 'https://formal-aquamarine-rmzumk8i6y.edgeone.app/12.jpg' }}
                 style={styles.headerImg}
             />
 
@@ -161,4 +161,5 @@ const styles = StyleSheet.create({
         color: '#fff',
     },
 });
+
 
