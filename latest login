@@ -45,7 +45,7 @@ export default function LoginScreen() {
         {/* App Logo */}
         <Image
           source={{
-            uri: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png",
+            uri: "https://i.ibb.co/3mcqsssw/11-ezgif-com-webp-to-png-converter.png",
           }}
           style={styles.logo}
         />
