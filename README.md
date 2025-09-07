@@ -79,7 +79,7 @@ This app addresses these gaps with a mobile-first solution.
 
 1. Open the link above  
 2. Navigate through interactive screens  
-3. Explore **Home, Report, First Aid, Status, and Settings** pages  
+3. Explore **Home, Report, First Aid, Sensor, and Settings** pages  
 
 ---
 
