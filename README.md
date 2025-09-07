@@ -23,18 +23,11 @@ This app addresses these gaps with a mobile-first solution.
 ---
 
 ## 🔹 Features (Prototype Phase)
-- **Home Page**: SOS emergency button, campus map (search & share location)  
+- **Home Page**: SOS emergency button, campus map (search & share location), audio recording(records short clips automatically when SOS is triggered), AI Call Simulation(starts a pretend phone conversation with AI-generated voice), Auto Call Simulation(Real automated voice call to security and optional SMS)
 - **Report Page**: Report incidents with details/photos, track status updates  
 - **First Aid**: Quick step-by-step first aid guides  
 - **Campus Status**: Live campus-wide alerts (e.g., flood, haze, power outage)  
 - **Settings**: Manage personal info & emergency contacts   
-
----
-
-## 🔹 Future Enhancements
-- **Audio Recording**: Automatically records short audio clips during emergencies, stored securely for verification  
-- **AI Call Simulation**: Pretend phone conversation with AI-generated voices for safety demonstration  
-- **Auto Call**: Real automated voice call to security and optional SMS using **Twilio**  
 
 ---
 
