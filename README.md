@@ -27,22 +27,14 @@ This app addresses these gaps with a mobile-first solution.
 - **Report Page**: Report incidents with details/photos, track status updates  
 - **First Aid**: Quick step-by-step first aid guides  
 - **Campus Status**: Live campus-wide alerts (e.g., flood, haze, power outage)  
-- **Settings**: Manage personal info & emergency contacts  
+- **Settings**: Manage personal info & emergency contacts   
 
 ---
 
 ## 🔹 Future Enhancements
-
-- **AI Call** – Pretend call simulation for safety (e.g., when walking alone)  
-  - *Idea*: AI-generated voices + scripted dialogues to simulate real phone calls.
-
-- **Auto Call** – Automated call to campus security with GPS location  
-  - *Idea*: Telephony APIs (e.g., Twilio, Vonage) to send voice calls/SMS alerts.
-
-- **Recording Feature** – Emergency incident recording  
-  - *Idea*: App can record audio during an emergency to provide evidence or context.  
-  - Stored securely in the backend (Supabase).  
-  - Can be triggered automatically when SOS button is pressed. 
+- **Audio Recording**: Automatically records short audio clips during emergencies, stored securely for verification  
+- **AI Call Simulation**: Pretend phone conversation with AI-generated voices for safety demonstration  
+- **Auto Call**: Real automated voice call to security and optional SMS using **Twilio**  
 
 ---
 
@@ -59,23 +51,20 @@ This app addresses these gaps with a mobile-first solution.
 - **Backend** → Supabase (authentication, user database, incident reports storage)  
 - **Maps** → Google Maps API (search, sharing, GPS tracking)  
 - **Push Notifications** → Firebase Cloud Messaging (free)  
-- **Audio Recording** → React Native audio recorder libraries (e.g., `react-native-audio-recorder-player` or `expo-av`)  
-  - Records short audio clips during emergency (SOS)  
-  - Automatically uploads to backend (Supabase/Firebase Storage) with timestamp & GPS  
-  - Optional playback for verification by campus security
- 
+- **Audio Recording** → `react-native-audio-recorder-player` or `expo-av`  
+  - Records short clips during emergencies  
+  - Automatically uploads to backend with timestamp & GPS  
 
 ---
 
 ### 🟢 Future Enhancements (AI Call & Auto Call)
 **AI Call (Fake Conversation for Safety)**  
-- Google Cloud Text-to-Speech (free tier: 4M chars/month for 12 months)  
-- Alternatives: OpenAI TTS, Coqui TTS (open-source, local, free)  
+- **Coqui TTS** (open-source, local, free) generates AI voices for simulated phone conversations  
 
 **Auto Call (Emergency Voice Call & SMS Alerts)**  
-- Twilio (trial + pay-per-use: ~$0.01/min calls, ~$0.0075/SMS)  
-- Alternative: Vonage API (similar pricing)  
-- Backup: Firebase Cloud Messaging (push alerts, free)  
+- **Twilio** → free trial + pay-per-use (~$0.01/min for calls, ~$0.0075/SMS)  
+  - Sends automated calls or SMS to campus security with GPS location  
+  - Backup push notifications via **Firebase Cloud Messaging** (free)  
 
 ---
 
@@ -94,5 +83,6 @@ This app addresses these gaps with a mobile-first solution.
 3. Explore **Home, Report, First Aid, Sensor, and Settings** pages  
 
 ---
+
 
 
