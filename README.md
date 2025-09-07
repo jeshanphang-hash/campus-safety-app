@@ -5,49 +5,37 @@
 ---
 
 ## 🔹 Overview
-Campus safety is a growing concern for students, staff, and faculty, especially during late hours or in isolated campus areas.  
-This project proposes a **Campus Safety Mobile Application** that provides a one-stop platform for emergencies, real-time alerts, and safety resources.
+Campus safety is a critical concern for students, staff, and faculty, especially during late hours or in isolated areas.  
+This project proposes a **Campus Safety Mobile Application** — a one-stop platform for emergencies, real-time alerts, and safety resources.
 
 This repository contains the **prototype design** built using [Figma](https://decal-bliss-20129420.figma.site/).
 
 ---
 
 ## 🔹 Problem Statement
-Current campus safety infrastructure lacks:
+Current campus safety systems face challenges such as:
+- Limited **real-time response**
+- Few options for students to **report or share emergencies quickly**
+- Lack of **centralized safety resources** in one place
 
-- Comprehensive **real-time response**
-- Easy ways for students to **report and share emergencies**
-- Centralized **safety resources** in one app
-
-This app aims to fill these gaps by offering a mobile-first safety solution.
+This app addresses these gaps with a mobile-first solution.
 
 ---
 
 ## 🔹 Features (Prototype Phase)
-- **Home Page**  
-  - SOS Emergency Button  
-  - Campus Map (search & share location)  
-
-- **Report Page**  
-  - Report incidents with details/photos  
-  - Track incident status updates  
-
-- **First Aid**  
-  - Quick step-by-step first aid guides  
-
-- **Sensor / Campus Status Overview**  
-  - Live campus-wide alerts (e.g., flood, haze, power outage)  
-
-- **Settings**  
-  - Manage personal information & emergency contacts  
+- **Home Page**: SOS emergency button, campus map (search & share location)  
+- **Report Page**: Report incidents with details/photos, track status updates  
+- **First Aid**: Quick step-by-step first aid guides  
+- **Campus Status**: Live campus-wide alerts (e.g., flood, haze, power outage)  
+- **Settings**: Manage personal info & emergency contacts  
 
 ---
 
 ## 🔹 Future Enhancements
-- **AI Call** → Pretend call simulation for safety (e.g., when walking alone)
-  -> Tech Idea: AI voice generation (e.g., Google Cloud Text-to-Speech, OpenAI TTS) + scripted dialogues to simulate a real phone call.
-- **Auto Call** → Automatic robotic call to campus security with GPS location
-  -> Tech Idea: Telephony API (e.g., Twilio, Vonage) to send automated voice calls/SMS with real-time GPS data from the app.
+- **AI Call** – Pretend call simulation for safety (e.g., when walking alone)  
+  - *Idea*: AI-generated voices + scripted dialogues to simulate real phone calls.  
+- **Auto Call** – Automated call to campus security with GPS location  
+  - *Idea*: Telephony APIs (e.g., Twilio, Vonage) to send voice calls/SMS alerts.  
 
 ---
 
@@ -59,41 +47,40 @@ This app aims to fill these gaps by offering a mobile-first safety solution.
 
 ---
 
-### 🟢 Planned Implementation (Feasible Build)
+### 🟢 Planned Implementation
 - **Frontend** → React Native (cross-platform mobile app)  
-- **Backend** → Supabase (authentication, user database, incident reports storage)  
-- **Maps** → Google Maps API (location search, location sharing, GPS tracking)  
+- **Backend** → Supabase (authentication, user database, incident reports)  
+- **Maps** → Google Maps API (search, sharing, GPS tracking)  
 - **Push Notifications** → Firebase Cloud Messaging (free)  
 
 ---
 
 ### 🟢 Future Enhancements (AI Call & Auto Call)
-
 **AI Call (Fake Conversation for Safety)**  
-- Google Cloud Text-to-Speech → free tier (4M characters/month for 12 months)  
-- Alternative: OpenAI TTS or Coqui TTS (open-source, free, local)  
+- Google Cloud Text-to-Speech (free tier: 4M chars/month for 12 months)  
+- Alternatives: OpenAI TTS, Coqui TTS (open-source, local, free)  
 
 **Auto Call (Emergency Voice Call & SMS Alerts)**  
-- Twilio → free trial + pay-per-use (~$0.01/min for calls, ~$0.0075 per SMS)  
+- Twilio (trial + pay-per-use: ~$0.01/min calls, ~$0.0075/SMS)  
 - Alternative: Vonage API (similar pricing)  
-- Backup for notifications: Firebase Cloud Messaging (free for push alerts)  
-
+- Backup: Firebase Cloud Messaging (push alerts, free)  
 
 ---
 
 ## 🔹 Impact
-- Faster response in emergencies  
-- Improved feeling of safety on campus  
-- Helps authorities monitor and respond proactively  
+- Faster emergency response  
+- Increased student confidence and safety  
+- Enables authorities to monitor and act proactively  
 
 ---
 
 ## 🔹 How to View Prototype
 🔗 [Figma Prototype Link](https://decal-bliss-20129420.figma.site/)
 
-1. Click the link above  
-2. Navigate through the interactive screens  
-3. Explore **Home, Report, First Aid, Sensor, and Settings** pages  
+1. Open the link above  
+2. Navigate through interactive screens  
+3. Explore **Home, Report, First Aid, Status, and Settings** pages  
 
 ---
+
 
