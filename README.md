@@ -32,10 +32,17 @@ This app addresses these gaps with a mobile-first solution.
 ---
 
 ## 🔹 Future Enhancements
+
 - **AI Call** – Pretend call simulation for safety (e.g., when walking alone)  
-  - *Idea*: AI-generated voices + scripted dialogues to simulate real phone calls.  
+  - *Idea*: AI-generated voices + scripted dialogues to simulate real phone calls.
+
 - **Auto Call** – Automated call to campus security with GPS location  
-  - *Idea*: Telephony APIs (e.g., Twilio, Vonage) to send voice calls/SMS alerts.  
+  - *Idea*: Telephony APIs (e.g., Twilio, Vonage) to send voice calls/SMS alerts.
+
+- **Recording Feature** – Emergency incident recording  
+  - *Idea*: App can record audio during an emergency to provide evidence or context.  
+  - Stored securely in the backend (Supabase).  
+  - Can be triggered automatically when SOS button is pressed. 
 
 ---
 
@@ -47,11 +54,16 @@ This app addresses these gaps with a mobile-first solution.
 
 ---
 
-### 🟢 Planned Implementation
+### 🟢 Planned Implementation (Feasible Build)
 - **Frontend** → React Native (cross-platform mobile app)  
-- **Backend** → Supabase (authentication, user database, incident reports)  
+- **Backend** → Supabase (authentication, user database, incident reports storage)  
 - **Maps** → Google Maps API (search, sharing, GPS tracking)  
 - **Push Notifications** → Firebase Cloud Messaging (free)  
+- **Audio Recording** → React Native audio recorder libraries (e.g., `react-native-audio-recorder-player` or `expo-av`)  
+  - Records short audio clips during emergency (SOS)  
+  - Automatically uploads to backend (Supabase/Firebase Storage) with timestamp & GPS  
+  - Optional playback for verification by campus security
+ 
 
 ---
 
